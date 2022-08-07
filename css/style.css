@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%;
+}
+
+table.single-border,
+table.single-border th,
+table.single-border td {
+  border: 1px solid black;
+}
+
+table.single-border {
+  border-collapse: collapse;
+}
+
+.navigation {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.menu {
+  padding: 10px;
+  background-color: tomato;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-right: 10px;
+}
+
+.menu ul li:last-child {
+  margin: 0;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 7px 10px;
+}
+
+.main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main table {
+  width: 100%;
+}
+
+td input[type="radio"],
+td input[type="checkbox"],
+td label {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.php-error,
+span[id*="js-error"] {
+  font-style: italic;
+}
+
+span[id*="js-error"] {
+  color: red;
+}
+
+.verify-button,
+.delete-button {
+  display: inline-block;
+  padding: 7px 10px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.verify-button {
+  background-color: green;
+}
+
+.delete-button {
+  background-color: red;
+}
